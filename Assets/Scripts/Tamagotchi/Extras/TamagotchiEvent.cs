@@ -20,9 +20,13 @@ public class TamagotchiEvent : MonoBehaviour
 
     public event Action<string> OnCerdoCritico;
 
+    public event Action OnCerdoMuerto;
+
 
     public void AsignarCerdo ( GameObject cerdoSel ) => OnCerdoSelec?.Invoke ( cerdoSel );
 
     public void ChangeClip(string clipname) => OnCerdoCritico?.Invoke(clipname);
+
+    public void CerdoMuerto() => OnCerdoMuerto?.Invoke();
 
 }

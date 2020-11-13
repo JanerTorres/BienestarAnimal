@@ -34,7 +34,7 @@ public class GestorTamagotchi : MonoBehaviour
     void Awake ()
     {
      
-       // ResetearTamagotchi (); //Para resetear el tamagotchi del cerdo, borrame en caso de ya hacer pruebas practicas.
+       //ResetearTamagotchi (); //Para resetear el tamagotchi del cerdo, borrame en caso de ya hacer pruebas practicas.
     }
 
     private IEnumerator Start ()
@@ -104,6 +104,7 @@ public class GestorTamagotchi : MonoBehaviour
         if (CerdoMuerto)
         {
             TamagotchiEvent.instance.ChangeClip("muerto");
+            TamagotchiEvent.instance.CerdoMuerto();
         }
         else if (CerdoCritico)
         {

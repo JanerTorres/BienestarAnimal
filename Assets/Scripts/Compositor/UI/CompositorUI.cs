@@ -4,6 +4,8 @@ using UnityEngine;
 using UnityEngine.UI;
 public class CompositorUI : MonoBehaviour
 {
+
+    public Text textactualIns;
     [Header("Timeline And Slider-----------------------")]
 
     public Image[] timeline;
@@ -45,6 +47,8 @@ public class CompositorUI : MonoBehaviour
 
     public IEnumerator  Start()
     {
+        textactualIns.text = "1";
+        
         initialColorTimeLine = timeline[2].color; //Set default color of timeline
 
         gameController = GameController.instance;
@@ -68,7 +72,7 @@ public class CompositorUI : MonoBehaviour
 
             actualInstUI = instrumentsUI.Find(x => x.nickname.Equals(name)); //Find the real one
             actualInstUI.gameObject.SetActive(true);
-
+         
             // actualInstUI.EnableUI();
             instrumentsUI.ForEach(x => x.EnableUI());
         }
@@ -128,7 +132,13 @@ public class CompositorUI : MonoBehaviour
     public void NextIntrument()
     {
         int indexActual = instrumentsUI.FindIndex(x => x.nickname.Equals(actualInstUI.nickname));
+    
         int indexNext = (indexActual + 1) % (instrumentsUI.Count);
+   
+
+        textactualIns.text =(indexNext + 1).ToString() ;
+
+
         actualInstUI = instrumentsUI[indexNext];
         DisableEnable();
     }

@@ -24,6 +24,9 @@ public class MovimientoHexagonal : MonoBehaviour
     
     void Start()
     {
+        TamagotchiEvent.instance.OnCerdoMuerto += DisableComponent;
+        
+        
         Collider[] colisiones = Physics.OverlapSphere(transform.position, 4);
         for (int i = 0; i < colisiones.Length; i++)
         {
@@ -38,6 +41,14 @@ public class MovimientoHexagonal : MonoBehaviour
         }
         CambiarFase(0);
     }
+
+    public void DisableComponent()
+    {
+        TamagotchiEvent.instance.OnCerdoMuerto -= DisableComponent;
+        this.GetComponent<MovimientoHexagonal>().enabled = false;
+    }
+
+
     IEnumerator EsperarQueSePueda(int f)
     {
         yield return new WaitUntil(() => this.enabled);

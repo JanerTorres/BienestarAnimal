@@ -1,5 +1,22 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1109 &-7992878926248410491
+AnimatorTransition:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_Conditions:
+  - m_ConditionMode: 1
+    m_ConditionEvent: muerto
+    m_EventTreshold: 0
+  m_DstStateMachine: {fileID: 0}
+  m_DstState: {fileID: 1102646985764756520}
+  m_Solo: 0
+  m_Mute: 0
+  m_IsExit: 0
+  serializedVersion: 1
 --- !u!91 &9100000
 AnimatorController:
   m_ObjectHideFlags: 0
@@ -336,7 +353,7 @@ AnimatorStateTransition:
   m_TransitionDuration: 0.25
   m_TransitionOffset: 0
   m_ExitTime: 0.875
-  m_HasExitTime: 0
+  m_HasExitTime: 1
   m_HasFixedDuration: 1
   m_InterruptionSource: 0
   m_OrderedInterruption: 1
@@ -1419,6 +1436,9 @@ AnimatorStateTransition:
   - m_ConditionMode: 1
     m_ConditionEvent: despierto
     m_EventTreshold: 0
+  - m_ConditionMode: 2
+    m_ConditionEvent: muerto
+    m_EventTreshold: 0
   m_DstStateMachine: {fileID: 1107682214098137252}
   m_DstState: {fileID: 0}
   m_Solo: 0
@@ -1428,7 +1448,7 @@ AnimatorStateTransition:
   m_TransitionDuration: 0.25
   m_TransitionOffset: 0
   m_ExitTime: 0.875
-  m_HasExitTime: 0
+  m_HasExitTime: 1
   m_HasFixedDuration: 1
   m_InterruptionSource: 0
   m_OrderedInterruption: 1
@@ -2215,7 +2235,7 @@ AnimatorStateMachine:
   m_ChildStates:
   - serializedVersion: 1
     m_State: {fileID: 1102778136965421044}
-    m_Position: {x: 804, y: -636, z: 0}
+    m_Position: {x: 800, y: -640, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 1102839282896619972}
     m_Position: {x: 1248, y: -492, z: 0}
@@ -2301,7 +2321,8 @@ AnimatorStateMachine:
     m_StateMachine: {fileID: 1107682214098137252}
     m_Position: {x: 300, y: 108, z: 0}
   m_AnyStateTransitions: []
-  m_EntryTransitions: []
+  m_EntryTransitions:
+  - {fileID: -7992878926248410491}
   m_StateMachineTransitions:
   - first: {fileID: 1107682214098137252}
     second:

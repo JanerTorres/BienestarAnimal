@@ -26,6 +26,13 @@ public class GameController : MonoBehaviour
     {
         compositorUI = CompositorUI.instance;
         numInstruments = compositorUI.instrumentsUI.Count;
+
+        
+    }
+
+    private void Update()
+    {
+       // Debug.Log( 1+ instrumentProp.FindIndex(x=>x.name==CompositorUI.actualInstUI.nickname));
     }
     #endregion
 

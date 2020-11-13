@@ -12,10 +12,18 @@ public class SelectorCerdos : MonoBehaviour
 
     void Start()
     {
+        TamagotchiEvent.instance.OnCerdoMuerto += DisableComponent;
+
         movimientoHexagonal = GetComponent<MovimientoHexagonal>();
         tama = GetComponent<GestorTamagotchi>();
     }
-    
+
+    public void DisableComponent()
+    {
+        TamagotchiEvent.instance.OnCerdoMuerto -= DisableComponent;
+        this.GetComponent<SelectorCerdos>().enabled = false;
+    }
+
     void Update()
     {
         
