@@ -12,7 +12,9 @@ public class BotonesCerdito : MonoBehaviour
     {
         singleton = this;
     }
-    
+
+
+
     public void Activar(int i)
     {
         if (i>=0 && i<botones.Length)

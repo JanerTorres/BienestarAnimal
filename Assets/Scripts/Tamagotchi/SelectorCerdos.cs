@@ -31,9 +31,14 @@ public class SelectorCerdos : MonoBehaviour
 
     private void OnMouseUp()
     {
+        if (!this.GetComponent<SelectorCerdos>().isActiveAndEnabled)
+            return;
+
+        
         if (MorionTools.MouseEnUI()) return;
         if (!enCentro)
         {
+            
             MoverAlCero();
             GestionCerdoUI.singleton.Activar(tama, this);
             tama.animCerdo.animator.SetFloat("velocidad", 0);

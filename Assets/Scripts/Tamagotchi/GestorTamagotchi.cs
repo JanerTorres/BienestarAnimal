@@ -29,12 +29,15 @@ public class GestorTamagotchi : MonoBehaviour
     public string id;
     private bool nuevoCerdito = false;
 
+    public bool resetearTama = false;
 
+    bool deathProcess = false;
     #region Awake,Start,Update
     void Awake ()
     {
      
-       //ResetearTamagotchi (); //Para resetear el tamagotchi del cerdo, borrame en caso de ya hacer pruebas practicas.
+       if(resetearTama)
+        ResetearTamagotchi (); //Para resetear el tamagotchi del cerdo, borrame en caso de ya hacer pruebas practicas.
     }
 
     private IEnumerator Start ()
@@ -83,9 +86,13 @@ public class GestorTamagotchi : MonoBehaviour
             animo.Actualizar ();
 
         }
-        else
+        else if(!deathProcess)
         {
             SistemasNivelACero ();
+            animCerdo.Muerto();
+            TamagotchiEvent.instance.CerdoMuerto();
+            this.GetComponent<MovimientoHexagonal>().enabled = false;
+            deathProcess = true;
         }
 
         CheckEstadoCritico();
@@ -171,11 +178,10 @@ public class GestorTamagotchi : MonoBehaviour
     #region Save system 
     public IEnumerator Guardar ()
     {
-        yield return new WaitForSeconds ( 15 );
-        //Debug.Log ( JsonUtility.ToJson ( this ) );
+        yield return new WaitForSeconds ( 15 );       
 
         MorionTools.Guardar ( "tamagotchi_" + this.gameObject.name , JsonUtility.ToJson ( this ) );
-        // Debug.Log ( $" se ha guardado los datos del {this.gameObject.name} correctamente" );
+   
         Guardar ();
     }
     #endregion
