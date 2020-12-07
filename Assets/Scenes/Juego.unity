@@ -1337,49 +1337,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &234407890
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 234407891}
-  - component: {fileID: 234407892}
-  m_Layer: 0
-  m_Name: EventTamagotchi
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &234407891
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 234407890}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1482444379}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &234407892
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 234407890}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 97bcaa9a2af2c1447ac1a6d488b53525, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &243322265 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100160, guid: 4434afeef6e937e47b784399496aa177,
@@ -2687,6 +2644,52 @@ MonoBehaviour:
   tieneValla: 0
   ocupado: 0
   ocupadoPor: -1
+--- !u!1 &463052847
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 463052849}
+  - component: {fileID: 463052848}
+  m_Layer: 0
+  m_Name: TamagotchiManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &463052848
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 463052847}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 535008470ffc1fc42adc37b914b33802, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &463052849
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 463052847}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1675.7797, y: 355.64325, z: 8.718487}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 939250748}
+  - {fileID: 1625251672}
+  - {fileID: 1846426600}
+  m_Father: {fileID: 0}
+  m_RootOrder: 12
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &471289907 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100190, guid: 4434afeef6e937e47b784399496aa177,
@@ -2746,7 +2749,7 @@ Transform:
   - {fileID: 335459647}
   - {fileID: 2017901420}
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &473736664 stripped
 GameObject:
@@ -3477,153 +3480,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 698283038}
   m_CullTransparentMesh: 0
---- !u!1 &700935634
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 700935636}
-  - component: {fileID: 700935635}
-  m_Layer: 0
-  m_Name: ConfigTamagotchi
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &700935635
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 700935634}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8d672995b83859c459da104a5abf71ff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  "configCicloSue\xF1o":
-    tiempoMaximoDespierto:
-      "a\xF1os": 0
-      meses: 0
-      dias: 0
-      horas: 15
-      minutos: 0
-      segundos: 0
-    tiempoMaximoDormido:
-      "a\xF1os": 0
-      meses: 0
-      dias: 0
-      horas: 9
-      minutos: 0
-      segundos: 0
-    tiempoDespiertoMaxSegundos: 0
-    tiempoDormidoMaxSegundos: 0
-    totalCicloSec: 0
-  configEnergia:
-    perdidaEnergiaPorRealizarActividades: 0.00006
-    pedidaEnergiaPorEnfermar: 0.00049
-  configEdad:
-    tiempoDeVidaMaximo:
-      "a\xF1os": 0
-      meses: 3
-      dias: 0
-      horas: 0
-      minutos: 0
-      segundos: 0
-    tiempoDeVidaMaximoSegundos: 0
-  configAnimo:
-    tiempoMaxSinJugar:
-      "a\xF1os": 0
-      meses: 0
-      dias: 0
-      horas: 0
-      minutos: 10
-      segundos: 0
-    tiempoMaxSinConsentir:
-      "a\xF1os": 0
-      meses: 0
-      dias: 0
-      horas: 0
-      minutos: 7
-      segundos: 0
-    tiempoMaxSinJugarSec: 0
-    tiempoMaxSinConsentirSec: 0
-    animoPorHambre: 0.001
-    animoPorJugar: 0.026
-    animoPorConsentir: 0.04
-    animoPorEnfermar: 0.031
-    "animoPorBa\xF1ar": 0.024
-    animoPorSanar: 0.024
-    animoPorDormir: 0.04
-  configSalud:
-    configHigiene:
-      "tiempoMaxSinBa\xF1ar":
-        "a\xF1os": 0
-        meses: 0
-        dias: 0
-        horas: 0
-        minutos: 5
-        segundos: 0
-      perdidaHigienePorEnmugrar: 0.024
-      "higienePorBa\xF1ar": 0.034
-    tiempoMaxSinCurar:
-      "a\xF1os": 0
-      meses: 0
-      dias: 0
-      horas: 0
-      minutos: 10
-      segundos: 0
-    saludPorCurar: 0.03
-    perdidaSaludPorEnfermar: 0.068
-  configAlimentacion:
-    configHambre:
-      tiempoMaxSinComer:
-        "a\xF1os": 0
-        meses: 0
-        dias: 3
-        horas: 0
-        minutos: 0
-        segundos: 0
-      tiempoMaxSinComerSec: 0
-      hambrePorJugar: 0.042
-    configHidratacion:
-      tiempoMaxSinHidratarse:
-        "a\xF1os": 0
-        meses: 0
-        dias: 2
-        horas: 0
-        minutos: 0
-        segundos: 0
-      tiempoMaxSinHidratarseSec: 0
-      "hidratacionPorBa\xF1o": 0.013
-      deshidratacionPorJugar: 0.009
-      hidratacionPorBeber: 0.012
-  tiempoActual:
-    "a\xF1os": 0
-    meses: 0
-    dias: 0
-    horas: 0
-    minutos: 0
-    segundos: 0
---- !u!4 &700935636
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 700935634}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1672.7004, y: -346.01794, z: -22.09331}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1482444379}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &712841385 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100020, guid: 4434afeef6e937e47b784399496aa177,
@@ -5427,7 +5283,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 907544613}
   m_CullTransparentMesh: 0
---- !u!1 &911780786
+--- !u!1 &939250747
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -5435,41 +5291,145 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 911780787}
-  - component: {fileID: 911780788}
+  - component: {fileID: 939250748}
+  - component: {fileID: 939250749}
   m_Layer: 0
-  m_Name: UITamagotchi
+  m_Name: ConfigTamagotchi
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &911780787
+--- !u!4 &939250748
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 911780786}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_GameObject: {fileID: 939250747}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -1672.7004, y: -346.01794, z: -22.09331}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 1482444379}
-  m_RootOrder: 2
+  m_Father: {fileID: 463052849}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &911780788
+--- !u!114 &939250749
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 911780786}
+  m_GameObject: {fileID: 939250747}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cc3478c04c70b94409c67a97c341c8ae, type: 3}
+  m_Script: {fileID: 11500000, guid: 8d672995b83859c459da104a5abf71ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  "configCicloSue\xF1o":
+    tiempoMaximoDespierto:
+      "a\xF1os": 0
+      meses: 0
+      dias: 0
+      horas: 15
+      minutos: 0
+      segundos: 0
+    tiempoMaximoDormido:
+      "a\xF1os": 0
+      meses: 0
+      dias: 0
+      horas: 9
+      minutos: 0
+      segundos: 0
+    tiempoDespiertoMaxSegundos: 0
+    tiempoDormidoMaxSegundos: 0
+    totalCicloSec: 0
+  configEnergia:
+    perdidaEnergiaPorRealizarActividades: 0.00006
+    pedidaEnergiaPorEnfermar: 0.00049
+  configEdad:
+    tiempoDeVidaMaximo:
+      "a\xF1os": 0
+      meses: 3
+      dias: 0
+      horas: 0
+      minutos: 0
+      segundos: 0
+    tiempoDeVidaMaximoSegundos: 0
+  configAnimo:
+    tiempoMaxSinJugar:
+      "a\xF1os": 0
+      meses: 0
+      dias: 0
+      horas: 0
+      minutos: 10
+      segundos: 0
+    tiempoMaxSinConsentir:
+      "a\xF1os": 0
+      meses: 0
+      dias: 0
+      horas: 0
+      minutos: 7
+      segundos: 0
+    tiempoMaxSinJugarSec: 0
+    tiempoMaxSinConsentirSec: 0
+    animoPorHambre: 0.001
+    animoPorJugar: 0.026
+    animoPorConsentir: 0.04
+    animoPorEnfermar: 0.031
+    "animoPorBa\xF1ar": 0.024
+    animoPorSanar: 0.024
+    animoPorDormir: 0.04
+  configSalud:
+    configHigiene:
+      "tiempoMaxSinBa\xF1ar":
+        "a\xF1os": 0
+        meses: 0
+        dias: 0
+        horas: 0
+        minutos: 5
+        segundos: 0
+      perdidaHigienePorEnmugrar: 0.024
+      "higienePorBa\xF1ar": 0.034
+    tiempoMaxSinCurar:
+      "a\xF1os": 0
+      meses: 0
+      dias: 0
+      horas: 0
+      minutos: 10
+      segundos: 0
+    saludPorCurar: 0.03
+    perdidaSaludPorEnfermar: 0.068
+  configAlimentacion:
+    configHambre:
+      tiempoMaxSinComer:
+        "a\xF1os": 0
+        meses: 0
+        dias: 3
+        horas: 0
+        minutos: 0
+        segundos: 0
+      tiempoMaxSinComerSec: 0
+      hambrePorJugar: 0.042
+    configHidratacion:
+      tiempoMaxSinHidratarse:
+        "a\xF1os": 0
+        meses: 0
+        dias: 2
+        horas: 0
+        minutos: 0
+        segundos: 0
+      tiempoMaxSinHidratarseSec: 0
+      "hidratacionPorBa\xF1o": 0.013
+      deshidratacionPorJugar: 0.009
+      hidratacionPorBeber: 0.012
+  tiempoActual:
+    "a\xF1os": 0
+    meses: 0
+    dias: 0
+    horas: 0
+    minutos: 0
+    segundos: 0
 --- !u!1 &964482199
 GameObject:
   m_ObjectHideFlags: 0
@@ -7710,52 +7670,6 @@ MonoBehaviour:
   tieneValla: 0
   ocupado: 0
   ocupadoPor: -1
---- !u!1 &1482444378
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1482444379}
-  - component: {fileID: 1482444380}
-  m_Layer: 0
-  m_Name: TamagotchiManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1482444379
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1482444378}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1675.7797, y: 355.64325, z: 8.718487}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 700935636}
-  - {fileID: 234407891}
-  - {fileID: 911780787}
-  m_Father: {fileID: 0}
-  m_RootOrder: 9
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1482444380
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1482444378}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 535008470ffc1fc42adc37b914b33802, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1488727083 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1978340313906704910, guid: 17dbc1d03757c104381eb0f11d8e7527,
@@ -8086,7 +8000,7 @@ Transform:
   - {fileID: 27027604}
   - {fileID: 1794407383}
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1596038185 stripped
 GameObject:
@@ -8132,6 +8046,49 @@ MonoBehaviour:
   tieneValla: 0
   ocupado: 0
   ocupadoPor: -1
+--- !u!1 &1625251671
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1625251672}
+  - component: {fileID: 1625251673}
+  m_Layer: 0
+  m_Name: EventTamagotchi
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1625251672
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1625251671}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 463052849}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1625251673
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1625251671}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 97bcaa9a2af2c1447ac1a6d488b53525, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1625913834 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100286, guid: 4434afeef6e937e47b784399496aa177,
@@ -9698,6 +9655,49 @@ MonoBehaviour:
   tieneValla: 0
   ocupado: 0
   ocupadoPor: -1
+--- !u!1 &1846426599
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1846426600}
+  - component: {fileID: 1846426601}
+  m_Layer: 0
+  m_Name: UITamagotchi
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1846426600
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1846426599}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 463052849}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1846426601
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1846426599}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc3478c04c70b94409c67a97c341c8ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1848419078
 GameObject:
   m_ObjectHideFlags: 0
@@ -11083,6 +11083,11 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 653305960070017313, guid: 17dbc1d03757c104381eb0f11d8e7527,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -5.000061
+      objectReference: {fileID: 0}
     - target: {fileID: 1654759704672367002, guid: 17dbc1d03757c104381eb0f11d8e7527,
         type: 3}
       propertyPath: m_AnchorMin.y
@@ -11107,7 +11112,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 911780788}
+      objectReference: {fileID: 0}
     - target: {fileID: 1978340313260147767, guid: 17dbc1d03757c104381eb0f11d8e7527,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
@@ -11327,7 +11332,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 911780788}
+      objectReference: {fileID: 0}
     - target: {fileID: 1978340313508798908, guid: 17dbc1d03757c104381eb0f11d8e7527,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
@@ -11407,7 +11412,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 911780788}
+      objectReference: {fileID: 0}
     - target: {fileID: 1978340313959580638, guid: 17dbc1d03757c104381eb0f11d8e7527,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
@@ -11417,12 +11422,12 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 911780788}
+      objectReference: {fileID: 0}
     - target: {fileID: 1978340313972183602, guid: 17dbc1d03757c104381eb0f11d8e7527,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
-      objectReference: {fileID: 911780788}
+      objectReference: {fileID: 0}
     - target: {fileID: 1978340313972183602, guid: 17dbc1d03757c104381eb0f11d8e7527,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Target
@@ -11492,6 +11497,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1978340314081014910, guid: 17dbc1d03757c104381eb0f11d8e7527,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 89.6001
       objectReference: {fileID: 0}
     - target: {fileID: 1978340314151408990, guid: 17dbc1d03757c104381eb0f11d8e7527,
         type: 3}
@@ -11647,7 +11657,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 911780788}
+      objectReference: {fileID: 0}
     - target: {fileID: 1978340314201390882, guid: 17dbc1d03757c104381eb0f11d8e7527,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
@@ -11717,7 +11727,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 911780788}
+      objectReference: {fileID: 0}
     - target: {fileID: 1978340314348327520, guid: 17dbc1d03757c104381eb0f11d8e7527,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
@@ -11727,7 +11737,12 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 911780788}
+      objectReference: {fileID: 0}
+    - target: {fileID: 1978340314770747224, guid: 17dbc1d03757c104381eb0f11d8e7527,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 89.6001
+      objectReference: {fileID: 0}
     - target: {fileID: 1978340314796329755, guid: 17dbc1d03757c104381eb0f11d8e7527,
         type: 3}
       propertyPath: m_AnchorMax.y
@@ -11742,12 +11757,12 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 911780788}
+      objectReference: {fileID: 0}
     - target: {fileID: 1978340314910453573, guid: 17dbc1d03757c104381eb0f11d8e7527,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
-      objectReference: {fileID: 911780788}
+      objectReference: {fileID: 0}
     - target: {fileID: 1978340314910453573, guid: 17dbc1d03757c104381eb0f11d8e7527,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Target
@@ -11782,12 +11797,12 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 911780788}
+      objectReference: {fileID: 0}
     - target: {fileID: 1978340315169260605, guid: 17dbc1d03757c104381eb0f11d8e7527,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
-      objectReference: {fileID: 911780788}
+      objectReference: {fileID: 0}
     - target: {fileID: 1978340315169260605, guid: 17dbc1d03757c104381eb0f11d8e7527,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Target
@@ -11861,7 +11876,7 @@ PrefabInstance:
     - target: {fileID: 1978340315235566006, guid: 17dbc1d03757c104381eb0f11d8e7527,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -16.199951
+      value: -16.19992
       objectReference: {fileID: 0}
     - target: {fileID: 1978340315238987376, guid: 17dbc1d03757c104381eb0f11d8e7527,
         type: 3}
@@ -11932,7 +11947,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 911780788}
+      objectReference: {fileID: 0}
     - target: {fileID: 1978340315307953102, guid: 17dbc1d03757c104381eb0f11d8e7527,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
@@ -11978,6 +11993,11 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4587329116505816964, guid: 17dbc1d03757c104381eb0f11d8e7527,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 89.6001
+      objectReference: {fileID: 0}
     - target: {fileID: 4611902359186784785, guid: 17dbc1d03757c104381eb0f11d8e7527,
         type: 3}
       propertyPath: frecuencia
@@ -11989,6 +12009,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300120, guid: b64610c0b8db6e14aaf362ea84b9a78d,
         type: 3}
+    - target: {fileID: 7724140748467289257, guid: 17dbc1d03757c104381eb0f11d8e7527,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0.6999512
+      objectReference: {fileID: 0}
     - target: {fileID: 8714240513941367637, guid: 17dbc1d03757c104381eb0f11d8e7527,
         type: 3}
       propertyPath: m_AnchorMin.y
@@ -12119,7 +12144,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 30.69609, y: -35}
+  m_AnchoredPosition: {x: 30.696045, y: -35}
   m_SizeDelta: {x: 61.39218, y: 57.364784}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &2271330359541455535
@@ -12174,7 +12199,7 @@ RectTransform:
   m_Children:
   - {fileID: 2271330360331334816}
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -12640,7 +12665,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: -29.482727, y: -35}
+  m_AnchoredPosition: {x: -29.482666, y: -35}
   m_SizeDelta: {x: 58.965424, y: 59.81736}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &2271330360261104271
