@@ -14,7 +14,12 @@ public class Usuarios : MonoBehaviour
     public void Login()
     {
         string contra = PlayerPrefs.GetString("URSS" + txtUsuario.text);
-        if (contra == txtContraseña1.text)
+        if (txtContraseña1.text == "" || txtUsuario.text == "")
+        {
+            Error("Todos los campos son obligatorios");
+            return;
+        }
+        else if (contra == txtContraseña1.text)
         {
             MorionTools.nombreUsuario = txtUsuario.text;
             PlayerPrefs.SetString("usuario_cargado", txtUsuario.text);
