@@ -128,7 +128,7 @@ PlayerSettings:
     16:10: 1
     16:9: 1
     Others: 1
-  bundleVersion: 6
+  bundleVersion: 7
   preloadedAssets: []
   metroInputSource: 0
   wsaTransparentSwapchain: 0
@@ -174,7 +174,7 @@ PlayerSettings:
   applicationIdentifier:
     Android: com.udea.porcipolis
   buildNumber: {}
-  AndroidBundleVersionCode: 6
+  AndroidBundleVersionCode: 7
   AndroidMinSdkVersion: 29
   AndroidTargetSdkVersion: 0
   AndroidPreferredInstallLocation: 1
@@ -252,7 +252,7 @@ PlayerSettings:
   AndroidTargetArchitectures: 3
   AndroidSplashScreenScale: 0
   androidSplashScreen: {fileID: 0}
-  AndroidKeystoreName: D:/Proyectos/Unity/UdeA/Cerditos/Bienestar Animal/Build/Tienda/keystore.keystore
+  AndroidKeystoreName: D:/CERDITOS/keystore.keystore
   AndroidKeyaliasName: porcipolis
   AndroidBuildApkPerCpuArchitecture: 0
   AndroidTVCompatibility: 1
